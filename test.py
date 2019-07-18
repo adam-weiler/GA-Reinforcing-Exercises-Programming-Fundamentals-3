@@ -1,21 +1,14 @@
 from house import house
 
-
-# from pprint import pprint
-# pprint(house)
-
-
-
-
 for key, value in house.items():
-    # print(type(value))
+    # print(key) #meta, objects
+    # print(type(value)) #<class 'dict'>, <class 'list'>
+    
     if(type(value) == list):
-        # print('hey')
-        # print(value[0])
-        print(len(value))
-#     pass
-
-
+        # print(value) #Prints every object
+        print(len(value)) #336
+        print(value[292]) #The Mississauga East Cooksville represenative in the house{'objects'} list.
+        print(value[292]['photo_url'])
 
 
 #1: What are the keys in this (top-level) dictionary?
@@ -31,4 +24,4 @@ for key, value in house.items():
 #A: 336
 
 #5: Get the URL for the photo of one representative into a variable.
-#A: 
+#A: http://www.ourcommons.ca/Parliamentarians/Images/OfficialMPPhotos/42/FonsecaPeter_Lib.jpg
